@@ -21,3 +21,9 @@ const createError = (errMsg) => {
 const numbertocheck = "sami";
 const lengthof = numbertocheck.length;
 //type casting or assertions
+const addOrConcate = (numberOne, numberTwo, method) => {
+    if (method === "add") {
+        return numberOne + numberTwo;
+    }
+    return '' + numberOne + numberTwo;
+};

@@ -42,4 +42,13 @@ const numbertocheck: any = "sami"
 const lengthof: number = (numbertocheck as string).length
 
 //type casting or assertions
- 
+const addOrConcate = (numberOne: number, numberTwo: number, method: "add" | "concat")
+    : number | string => {
+    if (method === "add") {
+        return numberOne + numberTwo
+    }
+    return '' + numberOne + numberTwo
+}
+
+
+
